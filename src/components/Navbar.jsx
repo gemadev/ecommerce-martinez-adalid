@@ -17,9 +17,9 @@ function Navbar() {
             type="text"/>
             <Search className="" style={{fontSize: '16px'}}/>
           </div>
-          <div className="ml-[10px] cursor-pointer text-[14px] right flex flex-1 items-center justify-start ">Impresiones 3D</div>
-          <div className="ml-[10px] cursor-pointer text-[14px] center flex flex-1 items-center justify-center">Mates</div>
-          <div className="ml-[10px] mr-[10px] cursor-pointer text-[14px] left flex flex-1 items-center justify-end">Masetas</div>
+          <div className={style}>Impresiones 3D</div>
+          <div className={style}>Mates</div>
+          <div className={style}>Masetas</div>
         </div>
 {/* Logo */}
         <div className="center flex-1 text-center" >
