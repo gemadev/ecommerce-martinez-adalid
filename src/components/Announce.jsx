@@ -10,8 +10,7 @@ function Announce() {
     }
     return <div className={announceStyle}>
         <h2>20% de descuento en efectivo</h2>
-        <Close className='cursor-pointer' onClick=
-        {handleClose}/>
+        <Close className='cursor-pointer' onClick={handleClose}/>
     </div>
 }
 

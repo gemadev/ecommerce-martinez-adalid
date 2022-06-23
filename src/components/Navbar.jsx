@@ -1,6 +1,6 @@
-import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Search } from "@material-ui/icons";
 import React from "react";
+import CartWidget from "./CartWidget";
 
 function Navbar() {
     const style = "text-[14px] cursor-pointer ml-[25px]"
@@ -29,11 +29,7 @@ function Navbar() {
         <div className="right flex flex-1 items-center justify-end">
             <div className={style}>Registrarse</div>
             <div className={style}>Acceder</div>
-            <div className={style}>
-            <Badge badgeContent={1} color='secondary'>
-                <ShoppingCartOutlined/>
-            </Badge>
-            </div>
+            <div className={style}><CartWidget/></div>
         </div>
       </div>
     </div>
