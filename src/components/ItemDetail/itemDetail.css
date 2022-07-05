@@ -1,0 +1,50 @@
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+.detail {
+    margin-top:  3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail__image {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+.content-name {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #de0e82;
+    font-size: 30px;
+}
+.content-price {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #de0e82;
+}
+
+@media screen and (min-width: 768px) {
+    .detail__image {
+        width: 50%;
+    }
+    .content {
+        padding-left: 3rem;
+        width: 50%;
+    }
+}
