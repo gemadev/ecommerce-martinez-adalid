@@ -1,7 +1,7 @@
 # Ame Tienda de Arte (E-commerce)
 
 Este es un proyecto desarrollado con la finalidad de juntar a los emprendedores locales de mar del plata para que puedan ofrecer sus productos.
-El mismo es realizado como entrega final para el curso de React-Js dictado por CoderHouse
+El mismo es realizado como primer entrega final para el curso de React-Js dictado por CoderHouse
 
 ![image](EcommerceReact.gif)
 
@@ -10,7 +10,7 @@ El mismo es realizado como entrega final para el curso de React-Js dictado por C
 
 * Antes que nada se debe contar con **NodeJs** instalado en nuestra computadora
 <br>
-* Entonces se debe * descargar el repositorio * //[¿Como descargarlo?](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
+**Entonces se debe** * descargar el repositorio * //[¿Como descargarlo?](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
 
  `git clone https://github.com/gemadev/ecommerce-martinez-adalid/tree/Primera-Entrega-del-Proyecto-Final.git`
 
@@ -34,6 +34,6 @@ El mismo es realizado como entrega final para el curso de React-Js dictado por C
 
 ⚛ React 18+
 
-react-router-dom 6+
+⚛ react-router-dom 6+
 
-react-dom 18+
+⚛ react-dom 18+
