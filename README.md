@@ -10,7 +10,7 @@ El mismo es realizado como entrega final para el curso de React-Js dictado por C
 
 * Antes que nada se debe contar con **NodeJs** instalado en nuestra computadora
 <br>
-* Entonces se debe *descargar el repositorio* //[¿Como descargarlo?](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
+* Entonces se debe * descargar el repositorio * //[¿Como descargarlo?](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
 
  `git clone https://github.com/gemadev/ecommerce-martinez-adalid/tree/Primera-Entrega-del-Proyecto-Final.git`
 
