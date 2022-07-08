@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Ame Tienda de Arte (E-commerce)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto desarrollado con la finalidad de juntar a los emprendedores locales de mar del plata para que puedan ofrecer sus productos.
+El mismo es realizado como primer entrega final para el curso de React-Js dictado por CoderHouse
 
-## Available Scripts
+![image](EcommerceReact.gif)
 
-In the project directory, you can run:
 
-### `npm start`
+### Uso/instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Antes que nada se debe contar con **NodeJs** instalado en nuestra computadora
+<br>
+**Entonces se debe** * descargar el repositorio * //[¿Como descargarlo?](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ `git clone https://github.com/gemadev/ecommerce-martinez-adalid/tree/Primera-Entrega-del-Proyecto-Final.git`
 
-### `npm test`
+* luego posicionarse en la ruta donde se encuentra el repositorio:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`cd Primera-Entrega-del-Proyecto-Final`
 
-### `npm run build`
+* entonces realizar la instalación de todas las dependencias requeridas por el proyecto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* y por ultimo iniciarlo en un servidor local:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start`
 
-### `npm run eject`
+### Tecnologias utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+💻 HTML, CSS, JS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🛒 Material-UI 4+
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+⚛ React 18+
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚛ react-router-dom 6+
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⚛ react-dom 18+
