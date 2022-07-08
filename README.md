@@ -31,5 +31,7 @@ El mismo es realizado como entrega final para el curso de React-Js dictado por C
 💻 HTML, CSS, JS
 🛒 Material-UI 4+
 ⚛ React 18+
- react-router-dom 6+
- react-dom 18+
+
+react-router-dom 6+
+
+react-dom 18+
