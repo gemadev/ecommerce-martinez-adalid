@@ -1,6 +1,6 @@
 body{
     --var-color: #de0e82;
-    backgroud: #fff;
+    background: #fff;
 }
 .light{
     font-size: 2rem;
@@ -13,9 +13,9 @@ body{
     content: attr(data-text);
     text-shadow: 0px 0px 20px var(--var-color);
     filter: blur(10px) brightness(0);
-    animation: flicker 2s linear forwards;
+    animation: flicker 3s linear forwards !important;
     animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite !important;
 }
 @keyframes flicker {
     0% {
