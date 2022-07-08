@@ -1,6 +1,8 @@
 import { Search } from "@material-ui/icons";
 import React from "react";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
+import './Navbar.css'
 
 function Navbar() {
     const style = "text-[14px] cursor-pointer ml-[25px]"
@@ -17,19 +19,31 @@ function Navbar() {
             type="text"/>
             <Search className="" style={{fontSize: '16px'}}/>
           </div>
-          <div className={style}>Impresiones 3D</div>
-          <div className={style}>Mates</div>
-          <div className={style}>Masetas</div>
+          <div className={style}>
+            <NavLink className="nav__link" to='/categoria/impresiones3d'>Impresiones 3D</NavLink>
+          </div>
+          <div className={style}>
+          <NavLink className="nav__link" to='/categoria/mates'>Mates</NavLink>
+          </div>
+          <div className={style}>
+          <NavLink className="nav__link" to='/categoria/masetas'>Masetas</NavLink>
+          </div>
         </div>
 {/* Logo */}
         <div className="center flex-1 text-center" >
-            <div className="logo font-bold text-lg">Ame Tienda de Arte</div>
+            <div className="logo font-bold text-lg">
+            <NavLink data-text="Ame Tienda de Arte" className="nav__link light" to='/'>Ame Tienda de Arte</NavLink>
+            </div>
         </div>
 {/* Right div */}
         <div className="right flex flex-1 items-center justify-end">
             <div className={style}>Registrarse</div>
             <div className={style}>Acceder</div>
-            <div className={style}><CartWidget/></div>
+            <div className={style}>
+            <NavLink className="nav__link" to='cart'>
+              <CartWidget/>
+            </NavLink>  
+            </div>
         </div>
       </div>
     </div>
