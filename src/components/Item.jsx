@@ -9,9 +9,9 @@ const Item = ({product}) => {
         <div className="card-body">
             <p className="card-text">{name}</p>
             <p className="card-text">{description}</p>
-            <p className="card-text">{price}</p>
+            <p className="card-text" style={{fontSize: '30px', color: '#006f45'}}>${price}</p>
         </div>
-        <Link to={`/detalle/${id}`}>Ver detalle</Link>    
+        <Link style={{fontSize: '30px', color: '#ea028c'}} to={`/detalle/${id}`}>Ver detalle</Link>    
     </div>
     );
 };
