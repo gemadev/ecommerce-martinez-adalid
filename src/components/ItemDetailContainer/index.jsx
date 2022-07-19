@@ -8,6 +8,8 @@ export const ItemDetailContainer = () => {
     const { detailId } = useParams();
 
 
+
+
     useEffect(()=> {
       const URL = `https://62c5fc5f134fa108c260dfcf.mockapi.io/produtcs/${detailId}`
       fetch(URL)

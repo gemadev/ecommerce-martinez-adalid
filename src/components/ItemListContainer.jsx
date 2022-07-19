@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import {useParams} from 'react-router-dom';
 
+
 const ItemListContainer = () => {
   const [productList, setProductList]=useState([])
   const [loading, setLoading]=useState(true)
@@ -10,6 +11,7 @@ const ItemListContainer = () => {
 
 
     useEffect(()=>{
+      
       const URL = categoryId 
       ? `https://62c5fc5f134fa108c260dfcf.mockapi.io/${categoryId}`
       : 'https://62c5fc5f134fa108c260dfcf.mockapi.io/produtcs';
