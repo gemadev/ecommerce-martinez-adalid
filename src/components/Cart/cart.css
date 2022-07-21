@@ -3,3 +3,10 @@
     justify-content: center;
     color: red;
 }
+
+.borrar{
+    margin-left: 20px;
+    font-size: 15px;
+    color: red;
+    background-color: black;
+}

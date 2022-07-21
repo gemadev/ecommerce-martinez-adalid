@@ -5,7 +5,7 @@ import ItemCart from '../itemCart/index'
 import '../Cart/cart.css'
 
 const Cart = () => {
-  const { cart, totalPrice } = useCartContext();
+  const { cart, clearCart, totalPrice } = useCartContext();
 
   if(cart.length === 0) {
     return (
@@ -23,8 +23,8 @@ const Cart = () => {
         }
     <p className='precio'>
       total $: {totalPrice()}
+    <button className='borrar' onClick={() => clearCart()}>Borrar toda la lista</button>   
     </p>
-    
     </>
   )
 }
