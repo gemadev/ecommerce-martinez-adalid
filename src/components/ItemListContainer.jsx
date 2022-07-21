@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import {useParams} from 'react-router-dom';
+import { getFirestore, collection , getDocs, query, where } from 'firebase/firestore';
 
 
 const ItemListContainer = () => {
@@ -11,16 +12,18 @@ const ItemListContainer = () => {
 
 
     useEffect(()=>{
-      
-      const URL = categoryId 
-      ? `https://62c5fc5f134fa108c260dfcf.mockapi.io/${categoryId}`
-      : 'https://62c5fc5f134fa108c260dfcf.mockapi.io/produtcs';
-
-      fetch(URL)
-      .then((res) => res.json())
-      .then((res)=> setProductList(res))
-      .catch((error)=> console.log(error))
-      .finally(()=>setLoading(false))
+      const querydb = getFirestore();
+      const queryCollection = collection(querydb, 'products');
+      if (categoryId) {
+      const queryFilter = query(queryCollection, where('category', '==', categoryId))
+      getDocs(queryFilter)
+          .then(res => setProductList(res.docs.map(product => ({id: product.id, ...product.data() }))))
+          .finally(()=>setLoading(false))
+      } else {
+        getDocs(queryCollection)
+        .then(res => setProductList(res.docs.map(product => ({id: product.id, ...product.data() }))))
+        .finally(()=>setLoading(false))
+      }
     },[categoryId])
 
 

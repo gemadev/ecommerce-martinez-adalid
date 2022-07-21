@@ -26,7 +26,7 @@ function Navbar() {
           <NavLink className="nav__link" to='/categoria/mates'>Mates</NavLink>
           </div>
           <div className={style}>
-          <NavLink className="nav__link" to='/categoria/masetas'>Masetas</NavLink>
+          <NavLink className="nav__link" to='/categoria/macetas'>Macetas</NavLink>
           </div>
         </div>
 {/* Logo */}

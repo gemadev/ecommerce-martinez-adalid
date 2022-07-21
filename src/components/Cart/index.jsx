@@ -23,7 +23,7 @@ const Cart = () => {
         }
     <p className='precio'>
       total $: {totalPrice()}
-    <button className='borrar' onClick={() => clearCart()}>Borrar toda la lista</button>   
+    <button className='borrar' onClick={() => clearCart()}>Borrar toda la compra</button>   
     </p>
     </>
   )
