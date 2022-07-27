@@ -22,8 +22,6 @@ const CartProvider = ({ children }) => {
     }
     const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
 
-    console.log('carrito: ', cart)
-    
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
     const clearCart = () => setCart([]);
