@@ -1,5 +1,6 @@
 import {Close} from '@material-ui/icons'
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 function Announce() {
 
@@ -10,8 +11,7 @@ function Announce() {
     }
     return <div className={announceStyle}>
         <h2>20% de descuento en efectivo</h2>
-        <Close className='cursor-pointer' onClick=
-        {handleClose}/>
+        <Close className='cursor-pointer' onClick={handleClose}/>
     </div>
 }
 
