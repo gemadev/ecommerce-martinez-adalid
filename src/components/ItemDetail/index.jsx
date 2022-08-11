@@ -12,7 +12,7 @@ export const ItemDetail = ({ item }) => {
     setGoToCart(true);
     addProduct(item, quantity);
   }
-  
+
   return (
     <div className='container'>
       <div className='detail'>

@@ -7,7 +7,7 @@ function CartWidget() {
   const { totalProducts } = useCartContext();
   return (
     <div>
-        <Badge badgeContent={totalProducts()} color='secondary'>
+        <Badge overlap="rectangular" badgeContent={totalProducts()} color='secondary'>
         <ShoppingCartOutlined/>
         </Badge>
     </div>    

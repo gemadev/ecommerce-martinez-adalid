@@ -8,6 +8,7 @@ const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
     const addProduct = (item, quantity) => {
+        localStorage.setItem( "articulo" , JSON.stringify( item ))
         if (isInCart(item.id)) {
             setCart(cart.map(product => {
                 return product.id === item.id ? {...product, quantity: product.quantity + quantity } : product
@@ -24,7 +25,7 @@ const CartProvider = ({ children }) => {
 
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
-    const clearCart = () => setCart([]);
+    const clearCart = () => setCart([]) & localStorage.clear();
 
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
     

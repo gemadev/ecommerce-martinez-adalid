@@ -11,12 +11,19 @@ export const ItemDetailContainer = () => {
       const querydb = getFirestore();
       const queryDoc = doc(querydb, 'products', detailId);
       getDoc(queryDoc)
-          .then(res => setItem({id: res.id, ...res.data()}))
-    }, [])
+      .then(res => setItem({id: res.id, ...res.data()}))
+   //eslint-disable-next-line
+  }, [])
   
+    if(item.name === undefined){
+      return (
+        <h1>no existe el producto</h1>
+      )
+    }else{
+
   return (
     <ItemDetail item={item}/>
-  );
+  );}
 }
 
 export default ItemDetailContainer;

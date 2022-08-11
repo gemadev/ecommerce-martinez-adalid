@@ -4,7 +4,11 @@ import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
 import './Navbar.css'
 
+
+
+
 function Navbar() {
+
     const style = "text-[14px] cursor-pointer ml-[25px]"
   return (
     <div className="navbar h-[60px] shadow-md relative z-10">
@@ -37,8 +41,12 @@ function Navbar() {
         </div>
 {/* Right div */}
         <div className="right flex flex-1 items-center justify-end">
-            <div className={style}>Registrarse</div>
-            <div className={style}>Acceder</div>
+        <NavLink to="/signup" className={style}>
+              <strong>Regisrarse</strong>
+            </NavLink>
+            <NavLink to="/signin" className={style}>
+              <strong>Ingresar</strong>
+            </NavLink>
             <div className={style}>
             <NavLink className="nav__link" to='cart'>
               <CartWidget/>
